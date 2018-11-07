@@ -1,0 +1,31 @@
+{
+    "name": "simple-discord-bot",
+    "version": "1.0.0",
+    "description": "Simple discord bot implementation",
+    "main": "bot.js",
+    "homepage": "https://MrPowerScripts.com",
+    "maintainers": [
+        "MrPowerScripts"
+    ],
+    "author": "MrPowerScripts",
+    "dependencies": {
+        "discord.js": "git+https://git@github.com/discordjs/discord.js.git",
+        "forever": "^0.15.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-register": "^6.26.0",
+        "babel-watch": "^2.0.7"
+    },
+    "scripts": {
+        "start": "NODE_ENV=dev babel-node bot.js",
+        "build": "babel bot.js -o bot.bin.js",
+        "_dev_run": "NODE_ENV=dev forever start bot.bin.js",
+        "_prod_run": "NODE_ENV=production forever start bot.bin.js",
+        "watch": "NODE_ENV=dev babel-watch bot.js",
+        "prod": "npm run build && npm run _prod_run",
+        "dev": "npm run build && npm run _dev_run",
+        "stop": "forever stopall"
+    }
+}
