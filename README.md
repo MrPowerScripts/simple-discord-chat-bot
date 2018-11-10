@@ -10,7 +10,7 @@ Your bot is now created. Congratulations. Now you need to register it and join i
 
 `https://discordapp.com/oauth2/authorize?client_id=<CLIENT_ID>&scope=bot`
 
-After you've crafted the URL put it back into the browser perform the authentication steps and tell it what server to join. After all this you should see the bot in the server user list. It will have `BOT` next to it's name.
+After you've crafted the URL put it back into the browser. Perform the authentication steps and tell it what server to join. After all this you should see the bot in the server user list. It will have `BOT` next to it's name.
 
 Now install the project dependencies of this repo.
 
