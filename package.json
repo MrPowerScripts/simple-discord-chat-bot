@@ -19,13 +19,11 @@
         "babel-watch": "^2.0.7"
     },
     "scripts": {
-        "start": "NODE_ENV=dev babel-node bot.js",
+        "dev": "NODE_ENV=dev babel-node bot.js",
         "build": "babel bot.js -o bot.bin.js",
-        "_dev_run": "NODE_ENV=dev forever start bot.bin.js",
         "_prod_run": "NODE_ENV=production forever start bot.bin.js",
         "watch": "NODE_ENV=dev babel-watch bot.js",
-        "prod": "npm run build && npm run _prod_run",
-        "dev": "npm run build && npm run _dev_run",
-        "stop": "forever stopall"
+        "start": "npm run build && npm run _prod_run",
+        "stop": "uid=$(forever list | grep bot.bin.js | cut -c24-27) && forever stop $uid"
     }
 }
