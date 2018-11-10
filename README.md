@@ -16,6 +16,6 @@ Now install the project dependencies of this repo.
 
 `npm install`
 
-Once everything is installed you can run the bot in development mode (`npm run dev`) or development watch mode, which reloads the bot automatically when you change `bot.js` (`npm run watch`). You can also star the bot in regular mode using (`npm run start`). This starts a conpiled version in a background process. You can stop the process using (`npm run stop`).
+Once everything is installed you can run the bot in development mode (`npm run dev`) or development watch mode, which reloads the bot automatically when you change `bot.js` (`npm run watch`). You can also start the bot in regular mode using (`npm run start`). This starts a conpiled version in a background process. You can stop the process using (`npm run stop`).
 
-When you have one of those running the bot will be online in your channel waiting to respond.
+When you have one of those running, the bot will be online in your channel waiting to respond.
