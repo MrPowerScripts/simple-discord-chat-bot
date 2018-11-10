@@ -1,6 +1,6 @@
 This is a Nodejs bot. Have at least Node 8 installed.
 
-You need to actually do some setup on discordapp.com before you can run this.
+You need to actually do some setup on discordapp.com before you can run this. You can [watch the video on how to do it here](https://youtu.be/kieSx_pzpCU).
 
 go to: https://discordapp.com/developers/applications/
 
